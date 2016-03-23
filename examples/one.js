@@ -1,15 +1,18 @@
-var addListenerFirst = require('../index.js')
-var EventEmitter = require('events')
+'use strict'
+const addListenerFirst = require('../index.js')
+const EventEmitter = require('events')
 
-function listenerOne() {
+function listenerOne () {
+  // eslint-disable-next-line no-console
   console.log('Listener 1: But I was added first!')
 }
 
-function listenerTwo() {
+function listenerTwo () {
+  // eslint-disable-next-line no-console
   console.log('Listener 2: I was run first!')
 }
 
-var emitter = new EventEmitter()
+const emitter = new EventEmitter()
 emitter.on('WOO!', listenerOne)
-addListenerFirst(emitter,'WOO!',listenerTwo)
+addListenerFirst(emitter, 'WOO!', listenerTwo)
 emitter.emit('WOO!')

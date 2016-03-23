@@ -10,20 +10,20 @@ If your application does any top-level logging, you may be hooking into `process
 # Example
 
 ```js
-var addListenerFirst = require('add-listener-first')
-var EventEmitter = require('events')
+const addListenerFirst = require('../index.js')
+const EventEmitter = require('events')
 
-function listenerOne() {
+function listenerOne () {
   console.log('Listener 1: But I was added first!')
 }
 
-function listenerTwo() {
+function listenerTwo () {
   console.log('Listener 2: I was run first!')
 }
 
-var emitter = new EventEmitter()
+const emitter = new EventEmitter()
 emitter.on('WOO!', listenerOne)
-addListenerFirst(emitter,'WOO!',listenerTwo)
+addListenerFirst(emitter, 'WOO!', listenerTwo)
 emitter.emit('WOO!')
 ```
 
