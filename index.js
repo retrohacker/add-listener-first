@@ -10,13 +10,13 @@
  * against `process.on('[SIGNAL]'..` to ensure another handler doesn't call
  * `process.exit` before your listener gets a chance to log shutdown.
  */
-var EventEmitter = require('events')
+var events = require('events')
 
 // Expose the function
 module.exports = function(eventEmitter, event,  listener) {
   // If eventEmitter doesn't have EventEmitter on its protocol chain, then
   // we have nothing to do.
-  if(!eventEmitter instanceof EventEmitter) {
+  if(! (eventEmitter instanceof events.EventEmitter) ) {
     return null
   }
 

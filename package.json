@@ -4,9 +4,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "tape tests/**/*.js"
+    "test": "istanbul cover node_modules/.bin/tape  tests/**/*.js"
   },
   "devDependencies": {
+    "istanbul": "^0.4.2",
     "tape": "^4.5.1"
   },
   "repository": {
