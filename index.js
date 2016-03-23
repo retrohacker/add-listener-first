@@ -13,7 +13,7 @@
 'use strict'
 const events = require('events')
 
-// Expose the function
+// Expose the function, its the only logic in this module
 module.exports = function addListenerFirst (eventEmitter, event, listener) {
   // If eventEmitter doesn't have EventEmitter on its protocol chain, then
   // we have nothing to do.
