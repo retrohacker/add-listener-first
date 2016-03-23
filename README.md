@@ -7,7 +7,7 @@ A module which allows you to add a listener to the beginning of an EventEmitter'
 
 # Why?
 
-If your application does any top-level logging, you may be hooking into `process.on([SIGNAL]` or `process.on(`. Often times, listeners for these signals include `process.exit` to gracefully shutdown the application with a meaningful error code. If these listeners are tirggered prior to your logging logic, your application will shutdown before your logging happens. This module ensures that your listener will be executed first, barring future displacement.
+If your application does any top-level logging, you may be hooking into `process.on([SIGNAL]` or `process.on("UncaughtException"`. Often times, listeners for these signals include `process.exit` to gracefully shutdown the application with a meaningful error code. If these listeners are tirggered prior to your logging logic, your application will shutdown before your logging happens. This module ensures that your listener will be executed first, barring future displacement.
 
 # Example
 
