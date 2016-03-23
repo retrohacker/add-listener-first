@@ -4,9 +4,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "istanbul cover node_modules/.bin/tape  tests/**/*.js"
+    "test": "istanbul cover node_modules/.bin/tape  tests/**/*.js",
+    "posttest": "eslint *.js tests/**/*.js"
   },
   "devDependencies": {
+    "babel-eslint": "^5.0.0",
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.1.0",
+    "eslint-plugin-react": "^4.2.3",
     "istanbul": "^0.4.2",
     "tape": "^4.5.1"
   },
