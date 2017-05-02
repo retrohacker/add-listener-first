@@ -8,10 +8,10 @@
     "posttest": "eslint *.js tests/**/*.js examples/one.js"
   },
   "devDependencies": {
-    "babel-eslint": "^5.0.0",
-    "eslint": "^2.4.0",
-    "eslint-config-airbnb": "^6.1.0",
-    "eslint-plugin-react": "^4.2.3",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-react": "^6.10.3",
     "istanbul": "^0.4.2",
     "tape": "^4.5.1"
   },
