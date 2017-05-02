@@ -1,6 +1,8 @@
 add-listener-first
 ==================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/retrohacker/add-listener-first.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/retrohacker/add-listener-first.svg?branch=master)](https://travis-ci.org/retrohacker/add-listener-first) [![Code Climate](https://codeclimate.com/github/retrohacker/add-listener-first/badges/gpa.svg)](https://codeclimate.com/github/retrohacker/add-listener-first) [![Test Coverage](https://codeclimate.com/github/retrohacker/add-listener-first/badges/coverage.svg)](https://codeclimate.com/github/retrohacker/add-listener-first/coverage) [![Issue Count](https://codeclimate.com/github/retrohacker/add-listener-first/badges/issue_count.svg)](https://codeclimate.com/github/retrohacker/add-listener-first)
 
 A module which allows you to add a listener to the beginning of an EventEmitter's list of handled events. Barring future displacement, this ensures that your listener will be called before all others.
